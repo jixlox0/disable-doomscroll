@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Disable doom-scroll",
+  "description": "A chrome extension for disable Reels,shorts in web application",
+  "version": "1.0",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "vite.svg"
+  },
+  "permissions": ["scripting", "tabs", "activeTab"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "assets/background.js"
+  }
+}
